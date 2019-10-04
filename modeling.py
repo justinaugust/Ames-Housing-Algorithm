@@ -96,7 +96,7 @@ def new_test(df,
 
 
 
-    test_df[['id','SalePrice']].to_csv('datasets/submission'+str(model_id)+'.csv', index=False)
+    test_df[['id','SalePrice']].to_csv('kaggle/submission'+str(model_id)+'.csv', index=False)
     try:
         alpha = new_model[0].alpha_
     except:
