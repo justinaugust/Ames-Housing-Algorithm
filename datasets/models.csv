@@ -1,0 +1,240 @@
+Unnamed: 0,Unnamed: 0.1,features_used,target,random_state,model_type,scaled,alpha,coeffs,train_score,test_score,cross_val_score,output,intercept,model_id
+0.0,0.0,0,0,0,0,0,0,0,0.0,0.0,0.0,0,,
+1.0,1.0,"['wood_deck_sf', 'open_porch_sf', 'bsmtfin_sf_1', 'heating_qc', 'fireplaces', 'mas_vnr_area', 'totrms_abvgrd', 'full_bath', 'fireplace_qu', 'year_remod/add', 'garage_yr_blt', 'year_built', 'bsmt_qual', '1st_flr_sf', 'total_bsmt_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'lot_area']",saleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.87142904e+00  1.63108139e+01  2.50263425e+01  9.49815090e+02
+ -1.39140540e+03  3.91482426e+01  2.71969277e+01 -5.76897352e+03
+  2.50397292e+03  1.88675531e+02 -1.14105039e+02  1.59007312e+02
+  2.35763905e+03  1.14847015e+01  1.12747758e+01  3.15038676e+01
+  1.23702473e+04  4.66465728e+01  1.75128255e+04  1.20449374e+04
+  1.62599562e+00]",0.8890900111917521,0.8370283628053425,0.8828173190851727,submission1.csv,-605638.5471272045,1.0
+2.0,2.0,"['bsmtfin_sf_1', 'heating_qc', 'mas_vnr_area', 'fireplace_qu', 'garage_yr_blt', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath']",saleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 2.62537483e+01  2.08909734e+03  3.55312040e+01  2.07860414e+03
+ -1.19177178e+02  8.29182227e+01  4.76101047e+03  3.52394388e+01
+  3.99734123e+01  1.32637922e+04  4.00757734e+01  1.82114761e+04
+  1.11754834e+04  2.03295586e-01  5.75641716e+03  3.27389048e+00
+ -4.20688625e+03]",0.8822960745004197,0.8252132069254332,0.8781792274855059,submission2.csv,-84168.81007518171,2.0
+3.0,3.0,"['bsmtfin_sf_1', 'heating_qc', 'mas_vnr_area', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'sq_ft', 'baths', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', 'bsmtfin_sf_2', '2nd_flr_sf', 'half_bath']",saleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 1.27408101e+01  6.97325589e+02  3.86907562e+01  1.84837157e+03
+  1.66336097e+02  4.90489841e+03  3.66261869e+01  2.38048807e+01
+  1.17952359e+04  3.30400153e+01  1.85695621e+04  1.40104142e+04
+  1.47517230e-01  8.65608106e+03  4.87901814e+00 -8.50091885e+03
+  1.55671607e-02 -4.75048761e+02 -5.71153089e-08  8.65608106e+03
+  7.59348097e-01 -5.70920278e+01  7.01436393e+03  1.27408098e+01
+  7.21097329e+00  8.71174364e+00 -2.44118930e+04]",0.8969926943483488,0.8371721322745975,0.8889901583710816,submission3.csv,-505792.593137137,3.0
+4.0,4.0,"['bsmtfin_sf_1', 'heating_qc', 'mas_vnr_area', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'sq_ft', 'baths', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', 'bsmtfin_sf_2', '2nd_flr_sf', 'half_bath']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 7.29605803e-03  1.66908301e-02  1.76383080e-03  1.26537888e-02
+  2.23912487e-03  3.72940923e-02  2.48143568e-01  1.34689518e-04
+  4.36955957e-02  2.34493957e-01  5.64934511e-02  4.08992240e-01
+  6.94184266e-07  1.06641263e-02  6.62707195e-04  2.76706246e-03
+  7.06126981e-08 -1.38254653e-03 -1.77247083e-13  1.06641263e-02
+  4.45090111e-06 -4.50423229e-04  5.51363088e-02  7.29605634e-03
+  7.86869182e-06  7.25952521e-05 -2.30370989e-02]",0.905682657220448,0.8797530963410817,0.9003794812413364,submission4.csv,2.3920671852130404,4.0
+5.0,5.0,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'sq_ft', 'baths', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.83749236e-03  1.42413543e-02  6.84795025e-03  2.31756242e-03
+  1.98621209e-02  2.06461263e-01  1.30500827e-04  4.26120343e-02
+  2.04495066e-01  5.33869591e-02  4.07651104e-01  5.85691578e-07
+  1.01696174e-02  5.73802334e-04 -1.87363584e-03  7.22632951e-08
+ -1.48425977e-03 -2.01720592e-13  1.01696174e-02  4.06639280e-06
+ -5.19664226e-04  5.41249001e-02  6.83749124e-03  1.04119849e-04
+ -2.28371297e-02  8.65302722e-05  2.35212628e-02  4.82784844e-04]",0.9077538211607606,0.8830615390901566,0.9023449327598267,submission5.csv,1.8059380016340008,5.0
+6.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'sq_ft', 'baths', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'bsmtfin_type_1_glq', 'garage_type_attchd', 'central_air_y', 'neighborhood_nridght', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.29796604e-03  1.46467425e-02  4.96658549e-03  2.17979978e-03
+  1.89333562e-02  2.07715671e-01  1.25331386e-04  4.07945679e-02
+  1.96593155e-01  5.07681543e-02  3.92512019e-01  5.11534265e-07
+  9.06749018e-03  5.95757903e-04 -2.32519046e-04  7.01875628e-08
+ -1.06871209e-03 -1.93247733e-13  9.06658478e-03  4.20647150e-06
+ -5.23396217e-04  5.03223888e-02  6.29808874e-03  1.06191752e-04
+ -2.07128379e-02  8.52744708e-05  2.63102449e-02  5.67161474e-04
+  9.84395007e-03  7.92109784e-03  2.57374346e-02  3.69568761e-02
+  1.04815570e-02  3.40241227e-02 -4.64540640e-02]",0.908602359187716,0.8841481831112735,0.9016764217701104,submission6.csv,1.9855452313563329,6.0
+7.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'baths', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'bsmtfin_type_1_glq', 'garage_type_attchd', 'central_air_y', 'neighborhood_nridght', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.21320575e-03  1.47111608e-02  5.77288562e-03  2.17032907e-03
+  1.91116843e-02  2.04171006e-01  1.26047197e-04  4.05467704e-02
+  2.00493578e-01  5.04741150e-02  3.92290127e-01  4.60478589e-07
+  8.92765829e-03  6.15247146e-04 -7.85685257e-04  6.92636676e-08
+ -1.04074354e-03  8.92765827e-03  4.22708134e-06 -5.13279476e-04
+  5.01318844e-02  6.21320575e-03  1.00855247e-04 -2.01020564e-02
+  8.47317036e-05  2.37623462e-02  5.75931924e-04  1.11742889e-02
+  7.57151352e-03  2.59358963e-02  3.76951434e-02  1.12708912e-02
+  3.39163512e-02 -4.59222487e-02]",0.9084122433714568,0.8853415048906155,0.9017511443173326,submission7.csv,1.9869901885095336,7.0
+8.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'bsmtfin_type_1_glq', 'garage_type_attchd', 'central_air_y', 'neighborhood_nridght', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.21320575e-03  1.47111608e-02  5.77288562e-03  2.17032907e-03
+  1.91116843e-02  2.04171006e-01  1.26047197e-04  4.05467704e-02
+  2.00493578e-01  5.04741150e-02  3.92290127e-01  4.60478589e-07
+  1.78553165e-02  6.15247146e-04 -7.85685255e-04  6.92636676e-08
+ -1.04074354e-03  4.22708134e-06 -5.13279476e-04  5.01318844e-02
+  6.21320575e-03  1.00855247e-04 -2.01020564e-02  8.47317036e-05
+  2.37623462e-02  5.75931924e-04  1.11742889e-02  7.57151352e-03
+  2.59358963e-02  3.76951434e-02  1.12708912e-02  3.39163512e-02
+ -4.59222487e-02]",0.9084122433714564,0.8853415048910004,0.9017511443140808,submission8.csv,1.9869901873730773,8.0
+9.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'garage_type_attchd', 'central_air_y', 'neighborhood_nridght', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.63488557e-03  1.49949036e-02  5.73310661e-03  2.18448226e-03
+  1.96794482e-02  2.04367541e-01  1.25549410e-04  4.07811168e-02
+  2.01566703e-01  5.15856588e-02  3.89289787e-01  4.71375303e-07
+  1.76088864e-02  7.39241009e-04 -2.96034016e-04  6.96288592e-08
+ -8.47851632e-04  4.19009392e-06 -5.21860119e-04  4.86488880e-02
+  6.63488557e-03  9.98988209e-05 -2.03766936e-02  8.29067163e-05
+  2.32622199e-02  6.05806940e-04  7.21783275e-03  2.48818908e-02
+  3.74553255e-02  1.11206346e-02  3.47742008e-02 -4.60858938e-02]",0.908337217848292,0.8856460472096734,0.9018677941420614,submission9.csv,1.893395990747365,9.0
+10.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'garage_type_attchd', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.56746018e-03  1.49813555e-02  4.83531128e-03  2.14988163e-03
+  1.96666878e-02  1.84980227e-01  1.27377727e-04  4.04260206e-02
+  2.22983783e-01  4.70136114e-02  3.96114353e-01  4.74976975e-07
+  1.55366566e-02  8.36740064e-04  1.14048486e-03  6.66686541e-08
+ -1.40627443e-03  4.15655035e-06 -4.87324163e-04  5.21641830e-02
+  6.56746018e-03  8.04028900e-05 -1.58490184e-02  7.82452724e-05
+  2.70365469e-02  6.27975868e-04  8.99123168e-03  2.56688220e-02
+  5.19404803e-02  1.06792940e-01  3.56808078e-02  1.15662190e-02
+  3.51223551e-02 -4.29663079e-02]",0.9094589794518232,0.8865330382749126,0.9027572987753112,submission10.csv,1.902969624689512,10.0
+11.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'lot_area', 'lot_frontage', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.62606746e-03  1.48480630e-02  4.86549170e-03  2.19420586e-03
+  1.94666265e-02  1.86067493e-01  1.27021569e-04  4.00705343e-02
+  2.24699082e-01  4.69289780e-02  3.97148820e-01  4.71742127e-07
+  1.44118533e-02  9.92756216e-04  1.59407786e-03  6.74831794e-08
+ -1.38437555e-03  4.17088925e-06 -4.87589906e-04  5.21431487e-02
+  6.62606745e-03  7.65124177e-05 -1.45517364e-02  7.84827489e-05
+  2.73405310e-02  6.31291752e-04  2.67944928e-02  5.02275695e-02
+  1.05171058e-01  3.63488851e-02  1.46608736e-02  3.48773571e-02
+ -4.31909948e-02]",0.9093894697356392,0.8868335824487457,0.9027246607428144,submission11.csv,1.7922513246939131,11.0
+12.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge', 'ms_subclass_2-story_1946_newer', 'exterior_1st_vinylsd', 'exterior_2nd_vinylsd']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.72599068e-03  1.46218351e-02  4.99035071e-03  2.24036222e-03
+  1.97162061e-02  1.81731340e-01  1.26338982e-04  3.95060082e-02
+  2.28442256e-01  4.70507917e-02  3.86827728e-01  4.75435127e-07
+  1.47960733e-02  1.10104046e-03  1.24723087e-03  3.40706747e-08
+ -1.02718816e-03  5.59720986e-06  5.01052625e-02  6.72599068e-03
+  7.69777106e-05 -1.39011752e-02  7.66782517e-05  2.76138216e-02
+  6.45761016e-04  2.73161670e-02  4.98656088e-02  1.07063878e-01
+  3.55663599e-02  9.41625002e-03  3.44503572e-02 -4.36490766e-02]",0.9091633422016736,0.8869671170424454,0.9026113066268696,submission12.csv,1.6741911665594174,12.0
+13.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'overall', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.78903254e-03  1.36326846e-02  5.33289846e-03  2.24208672e-03
+  1.96233464e-02  1.82118566e-01  1.25534665e-04  3.97926668e-02
+  2.27143172e-01  4.67090550e-02  3.97120152e-01  5.02651236e-07
+  1.61692881e-02  1.10202152e-03  1.36465680e-03  3.28899932e-08
+ -1.36801180e-03  5.66828344e-06  5.22594000e-02  6.78903254e-03
+  8.14162448e-05 -1.48325951e-02  7.64348695e-05  2.73256421e-02
+  5.82342867e-04  2.75051032e-02  5.15589164e-02  1.09111499e-01
+  3.72574939e-02]",0.9089829841905506,0.8870589631082937,0.9032774078429529,submission13.csv,1.7848446438102832,13.0
+14.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.82411753e-03  1.38703973e-02  5.31107184e-03  2.25662647e-03
+  1.98070044e-02  1.81510203e-01  1.23595661e-04  3.87398846e-02
+  2.28453685e-01  4.52736318e-02  3.63145946e-01  4.94356193e-07
+  1.66397646e-02  1.08232639e-03  6.47775341e-04  3.22521179e-08
+  5.66039121e-06  4.50561200e-02  6.82411753e-03  8.11799042e-05
+ -1.60731652e-02  7.65751379e-05  2.66548526e-02  5.82323317e-04
+  3.01175741e-02  5.06101236e-02  1.07029194e-01  3.63995366e-02]",0.9089304794321712,0.8877166155385132,0.9034016170574322,submission14.csv,1.8127138309997548,14.0
+15.0,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,0,model has none,"[ 6.82411753e-03  1.38703973e-02  5.31107184e-03  2.25662647e-03
+  1.98070044e-02  1.81510203e-01  1.23595661e-04  3.87398846e-02
+  2.28453685e-01  4.52736318e-02  3.63145946e-01  4.94356193e-07
+  1.66397646e-02  1.08232639e-03  6.47775341e-04  3.22521179e-08
+  5.66039121e-06  4.50561200e-02  6.82411753e-03  8.11799042e-05
+ -1.60731652e-02  7.65751379e-05  2.66548526e-02  5.82323317e-04
+  3.01175741e-02  5.06101236e-02  1.07029194e-01  3.63995366e-02]",0.9089304794321712,0.8877166155386487,0.9034016170587452,submission15.csv,1.8127138310043591,15.0
+,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.ridge.RidgeCV'>,0,1.122277356208507,"[ 6.80568764e-03  1.39091766e-02  5.62888155e-03  2.26524015e-03
+  2.00043510e-02  1.84578956e-01  1.25352388e-04  3.93451170e-02
+  2.17862922e-01  4.63348519e-02  3.53145268e-01  4.89986082e-07
+  1.50515916e-02  1.16649322e-03  2.38880178e-03  3.23125974e-08
+  5.65526745e-06  4.53113526e-02  6.80568764e-03  8.77858583e-05
+ -1.32330277e-02  8.03159033e-05  2.67603542e-02  5.80666459e-04
+  3.03847554e-02  4.91443720e-02  1.02647789e-01  3.44218845e-02]",0.9089054334685248,0.8879536136290421,0.9035509781966573,submission16.csv,1.8537750355208473,16.0
+,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.coordinate_descent.LassoCV'>,0,0.0001325087291997954,"[ 1.36310024e-02  1.39380619e-02  5.95774221e-03  2.27664210e-03
+  1.91749288e-02  1.85871815e-01  1.25660935e-04  3.88878456e-02
+  2.15762900e-01  4.57666583e-02  3.60772835e-01  5.06366592e-07
+  1.19475571e-02  1.07971941e-03  2.10638662e-03  3.24440216e-08
+  5.69795217e-06  4.50619046e-02  2.27424866e-05  9.05258206e-05
+ -8.16865880e-03  8.12496416e-05  2.53426131e-02  5.91276850e-04
+  2.73380926e-02  4.60953952e-02  9.79071258e-02  2.77811644e-02]",0.9088937309327796,0.8879333270195174,0.9033506843530306,submission17.csv,1.812005284983698,17.0
+,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.coordinate_descent.LassoCV'>,1,0.0009637578663841089,"[ 0.04075877  0.01326746  0.00991724  0.06682179  0.0184288   0.05255091
+  0.02706043  0.02638359  0.0784894   0.02708753  0.09335852  0.00568311
+  0.00746195  0.00179889  0.0022059   0.01543437  0.0276443   0.04710963
+  0.          0.02738045 -0.          0.03277252  0.01613217  0.01235422
+  0.00715534  0.01185877  0.01374438  0.00519576]",0.9088181524350349,0.8874619043127558,0.9034823141780087,submission18.csv,12.036055699469589,18.0
+,,"['bsmtfin_sf_1', 'heating_qc', 'fireplace_qu', 'year_built', 'bsmt_qual', '1st_flr_sf', 'garage_area', 'kitchen_qual', 'gr_liv_area', 'exter_qual', 'overall_qual', 'porches', 'baths', 'open_porch_sf', 'full_bath', 'lot', 'lot_area', 'overall_cond', 'bsmtfin_sf_1', '2nd_flr_sf', 'half_bath', 'total_bsmt_sf', 'fireplaces', 'year_remod/add', 'central_air_y', 'neighborhood_nridght', 'neighborhood_stonebr', 'neighborhood_noridge']",logsaleprice,1,<class 'sklearn.linear_model.base.LinearRegression'>,1,model has none,"[ 0.02058331  0.01334593  0.00958415  0.06848527  0.01836651  0.05827489
+  0.02665554  0.02588655  0.07226095  0.02706747  0.09302114  0.00552659
+  0.01510036  0.00231484  0.00035086  0.01593893  0.0276404   0.0486106
+  0.02058331  0.03426083 -0.00798895  0.03330602  0.01672748  0.01216875
+  0.00748972  0.01258587  0.01436886  0.00537408]",0.9089304794321711,0.8877166155378544,0.9034269992149262,submission19.csv,12.036055699469589,19.0
+,,"Index(['overall_qual', 'overall_cond', 'mas_vnr_area', 'exter_qual',
+       'exter_cond', 'bsmt_qual', 'bsmt_cond', 'bsmtfin_sf_1', 'heating_qc',
+       '1st_flr_sf',
+       ...
+       'bsmtfin_type_1_na', 'bsmtfin_type_1_rec', 'bsmtfin_type_1_unf',
+       'central_air_y', 'garage_type_attchd', 'garage_type_basment',
+       'garage_type_builtin', 'garage_type_carport', 'garage_type_detchd',
+       'garage_type_na'],
+      dtype='object', length=125)",logsaleprice,1,<class 'sklearn.linear_model.ridge.RidgeCV'>,0,1.6233824316122782,"[ 0.33751695  0.0452218   0.00518405  0.04793037  0.01694198  0.05294495
+  0.00800464  0.02067553  0.01213633  0.17923022  0.27916828  0.03127971
+  0.03828541  0.0171859  -0.01298764 -0.05483567  0.04214572  0.00808342
+  0.02509267  0.04047816  0.030911    0.03229644 -0.00684381  0.0147113
+ -0.00176096 -0.10589536  0.07566966 -0.08416356  0.01615861 -0.00512306
+ -0.08930687 -0.01284331  0.01980657  0.02791571  0.02907394 -0.13611121
+ -0.04106132 -0.00703637  0.00782435  0.00596856  0.03141047 -0.02426216
+ -0.03280882  0.00506629  0.01370666 -0.02376975 -0.02629589  0.01150043
+ -0.01441954  0.04347578 -0.0782587  -0.01321886  0.045961    0.23638609
+ -0.12562683 -0.10590959  0.00409807 -0.0353873   0.0450561   0.01633561
+  0.0914974  -0.07422266 -0.1098122  -0.03645677 -0.03922529  0.06187629
+  0.1388102  -0.04858907 -0.01996626  0.02682169 -0.02994933 -0.02093572
+  0.07447601 -0.0267467  -0.01298094  0.02649105 -0.07231628  0.0036552
+ -0.01286565  0.04176264 -0.01075299 -0.008267    0.0697142  -0.00695114
+  0.14984641  0.05666076 -0.07975949  0.15798859  0.08195658  0.05965702
+  0.04846165  0.0149242   0.04219677  0.04030101  0.01512976  0.0366773
+  0.0845355   0.02318893  0.04121158  0.08386315  0.00299991 -0.01631036
+ -0.04706154  0.05679484  0.02657523  0.0048313   0.04277264  0.0278086
+ -0.04004491  0.02889772 -0.00157573  0.0455374   0.02440274  0.01555324
+ -0.0240512   0.17266151 -0.01248777  0.06749171  0.02568174  0.01886609
+ -0.06561786  0.01220517 -0.03332794  0.01260937  0.19207645]",0.9239372368141501,-4.571218228428721,0.9042164154052627,submission20.csv,20.548670942817292,20.0
+,,"Index(['overall_qual', 'overall_cond', 'mas_vnr_area', 'exter_qual',
+       'exter_cond', 'bsmt_qual', 'bsmt_cond', 'bsmtfin_sf_1', 'heating_qc',
+       '1st_flr_sf',
+       ...
+       'bsmtfin_type_1_na', 'bsmtfin_type_1_rec', 'bsmtfin_type_1_unf',
+       'central_air_y', 'garage_type_attchd', 'garage_type_basment',
+       'garage_type_builtin', 'garage_type_carport', 'garage_type_detchd',
+       'garage_type_na'],
+      dtype='object', length=125)",logsaleprice,1,<class 'sklearn.linear_model.ridge.RidgeCV'>,1,47.13534534786907,"[ 7.53140083e-02  3.49396354e-02  1.37067196e-02  2.65708975e-02
+  7.14561694e-03  4.63253945e-02  6.14084688e-03  4.05366302e-02
+  1.21099602e-02  5.91342338e-02  7.84743598e-02  1.79584953e-02
+  2.27283287e-02  8.72894172e-03 -8.70310320e-03 -1.11929161e-02
+  2.70800142e-02  1.42905288e-02  1.62486545e-02  2.91116872e-02
+  2.09370825e-02  1.81070191e-02 -8.05604548e-03  1.41150763e-02
+  2.61925640e-03 -7.11594317e-03  1.05128303e-02 -1.77911701e-02
+  6.45094542e-03 -9.29865312e-05 -2.27744975e-02 -1.62220500e-03
+  1.46539508e-03  3.91785446e-03  8.35038841e-03 -2.75250555e-02
+ -7.55600203e-03 -6.93945887e-04  8.30078079e-04 -6.09307125e-04
+  7.49042302e-03 -4.58425232e-03 -1.99265140e-03  1.43708692e-03
+  1.22242314e-03 -2.18940108e-03 -2.10214833e-03  2.70744790e-03
+ -3.24628122e-04  1.08187504e-02 -1.56154461e-02 -9.28353509e-05
+  3.52645862e-03  1.60185023e-02 -2.06234831e-02 -1.12706171e-02
+  2.89919218e-03 -7.38271137e-03  9.47555423e-03 -1.24693495e-03
+  2.65371174e-02 -1.18749140e-02 -2.59191603e-02 -5.04399306e-03
+ -4.93805835e-03  1.81363393e-02  2.06338623e-02 -4.35567123e-03
+ -1.15744140e-03  4.03454344e-03 -3.75472403e-03 -3.92652187e-03
+  4.31816621e-03 -2.17318142e-03 -1.24401275e-03  1.16756831e-03
+ -1.11646580e-02 -8.87578013e-04 -2.07631373e-03  4.14672022e-03
+ -2.92151347e-03 -1.84964134e-03  4.50338305e-03 -9.59988516e-04
+  1.02713048e-02  2.53567479e-03 -7.49105060e-03  2.31739916e-02
+  5.10963871e-03  1.22209102e-02  1.19080520e-02  7.44764891e-04
+  1.21725477e-02  6.99377359e-03  1.23685348e-03  2.72804134e-03
+  2.83862702e-02  4.67281413e-03  4.64531879e-03  4.38611306e-03
+  3.95254760e-03 -2.29043657e-03 -4.41825233e-03  9.99674152e-03
+  7.07939688e-03  1.00748535e-04  1.19667868e-02  6.38532562e-03
+ -3.21625677e-03  2.39013843e-03  3.23950555e-03  1.07388951e-02
+  3.24659398e-03  7.37460897e-03 -6.60543003e-03  2.03028031e-02
+ -3.93805055e-03  1.01682559e-02  8.82467729e-03  3.46856818e-03
+ -7.57651551e-03  4.42316416e-04 -3.41423355e-03 -1.55073657e-03
+  3.31162776e-02]",0.9236529279279807,-3.9570620002555623,0.9032316157089622,submission21.csv,12.036055699469589,21.0
+,,"Index(['overall_qual', 'overall_cond', 'mas_vnr_area', 'exter_qual',
+       'exter_cond', 'bsmt_qual', 'bsmt_cond', 'bsmtfin_sf_1', 'heating_qc',
+       '1st_flr_sf',
+       ...
+       'bsmtfin_type_1_na', 'bsmtfin_type_1_rec', 'bsmtfin_type_1_unf',
+       'central_air_y', 'garage_type_attchd', 'garage_type_basment',
+       'garage_type_builtin', 'garage_type_carport', 'garage_type_detchd',
+       'garage_type_na'],
+      dtype='object', length=125)",logsaleprice,1,<class 'sklearn.linear_model.coordinate_descent.LassoCV'>,1,0.0017558563314144689,"[ 0.08636572  0.0360831   0.01123537  0.02944437  0.00703242  0.05122209
+  0.          0.03173895  0.01217822  0.05499481  0.09472037  0.01746507
+  0.01790761  0.         -0.00474716 -0.01218748  0.02768158  0.00427244
+  0.01626455  0.02897717  0.00464905  0.0007268  -0.00639157  0.02048326
+  0.         -0.00443313  0.         -0.01446016  0.0095405  -0.
+ -0.01792789 -0.         -0.         -0.          0.00609902 -0.02660059
+ -0.00386603 -0.          0.          0.          0.00542895 -0.00347551
+ -0.001602    0.          0.         -0.         -0.          0.00138069
+  0.          0.01076423 -0.01109544  0.          0.00079976  0.01522206
+ -0.01724484 -0.0074419   0.0042413  -0.00053098  0.00764588 -0.
+  0.0248025  -0.00754808 -0.02241779 -0.         -0.00228277  0.01699281
+  0.01964252 -0.00208082 -0.          0.00216665 -0.         -0.
+  0.0038723  -0.         -0.          0.0011149  -0.          0.
+ -0.          0.00181702  0.          0.          0.00289201 -0.
+  0.00904769  0.00120454 -0.00665634  0.01386265  0.00170703  0.00773051
+  0.00010624 -0.          0.         -0.         -0.         -0.
+  0.00681986 -0.00045035  0.          0.00221819 -0.         -0.00022122
+ -0.00217833  0.          0.         -0.          0.00239727 -0.
+ -0.00189872 -0.          0.         -0.         -0.          0.00431733
+ -0.00584995  0.01424887 -0.00297152  0.          0.007992    0.00261303
+ -0.00775054  0.         -0.00116004 -0.00140464  0.        ]",0.9203337806511276,-3.9954689535067565,0.9057759836106827,submission22.csv,12.036055699469589,22.0
+,,"Index(['sq_ft'], dtype='object')",logsaleprice,1,<class 'sklearn.linear_model.coordinate_descent.LassoCV'>,1,0.00882859884149515,[0.02238425],0.0052429451039893715,0.0023374835345864042,-0.00029973663134583715,submission23.csv,12.036055699469589,23.0
