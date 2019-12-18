@@ -106,17 +106,17 @@ Checking the categorical features by average `saleprice`. I used this to identif
 |---|---|---|---|---|---|---|---|
 |6|OLS|28|`logsaleprice`|No|0.908|0.887|0.903|
 
-## Scaling, Ridge, Lasso and RandomForests
-In order to adjust the fit of the model and balance the bias/variability (showing a bit more bias than preferred at this point), regularlization and optimization of features via RandomForests was utilized.
+## Scaling, Ridge, Lasso and Recursive Feature Selection
+In order to adjust the fit of the model and balance the bias/variability (showing a bit more bias than preferred at this point), regularlization and optimization of features via Recursive Feature Selection was utilized.
 
 |Model id|Estimator|# of features|Target|Scaled|R2 Training|R2 Test|R2 Cross Validation|
 |---|---|---|---|---|---|---|---|
 |7|OLS|28|`logsaleprice`|Yes|0.908|0.887|0.903|
 |8|LassoCV|28|`logsaleprice`|Yes|0.908|0.887|0.903|
 |9|RidgeCV|28|`logsaleprice`|Yes|0.908|0.887|0.903|
-|10|Random Forest & RidgeCV||`logsaleprice`|Yes|0.924|-4.76|-1474918909317527.0|
-|11|Random Forest & LassoCV||`logsaleprice`|Yes|0.924|-4.76|0.0001|
-|12|Polynomial Transform & Random Forest & RidgeCV|107|`logsaleprice`|Yes|0.910|0.866|0.882|
+|10|Recursive Feature Selection & RidgeCV||`logsaleprice`|Yes|0.924|-4.76|-1474918909317527.0|
+|11|Recursive Feature Selection & LassoCV||`logsaleprice`|Yes|0.924|-4.76|0.0001|
+|12|Polynomial Transform & Recursive Feature Selection & RidgeCV|107|`logsaleprice`|Yes|0.910|0.866|0.882|
 
 
 
@@ -138,12 +138,12 @@ Attempting to use other concepts on this data was not success for me. None of th
 |7|OLS|28|`logsaleprice`|Yes|0.908|0.887|0.903|
 |8|LassoCV|28|`logsaleprice`|Yes|0.908|0.887|0.903|
 |9|RidgeCV|28|`logsaleprice`|Yes|0.908|0.887|0.903|
-|10|Random Forest & RidgeCV||`logsaleprice`|Yes|0.924|-4.76|-1474918909317527.0|
-|11|Random Forest & LassoCV||`logsaleprice`|Yes|0.924|-4.76|0.0001|
-|12|Polynomial Transform & Random Forest & RidgeCV|107|`logsaleprice`|Yes|0.910|0.866| |
+|10|Recursive Feature Selection & RidgeCV||`logsaleprice`|Yes|0.924|-4.76|-1474918909317527.0|
+|11|Recursive Feature Selection & LassoCV||`logsaleprice`|Yes|0.924|-4.76|0.0001|
+|12|Polynomial Transform & Recursive Feature Selection & RidgeCV|107|`logsaleprice`|Yes|0.910|0.866| |
 </details>
 
-| | OLS Model|Ridge & Random Forest Feature Selection|
+| | OLS Model|Ridge & Recursive Feature Selection Feature Selection|
 |-----|-----|-----|
 |Untouched Features|21|4|
 |Transformed Features|5|11|
@@ -180,7 +180,7 @@ Attempting to use other concepts on this data was not success for me. None of th
 `neighborhood_noridge`
 </details>
 
-<preview><details><summary>Ridge & Random Forest Feature Selection Predictive Features</summary></preview>
+<preview><details><summary>Ridge & Recursive Feature Selection Feature Selection Predictive Features</summary></preview>
 `lot_frontage`, `lot_area`, `alley`, `year_built`, `ms_zoning lot_shape`, `ms_zoning bldg_type`, `ms_zoning bsmtfin_sf_2`, `lot_frontage^2`, `lot_frontage lot_shape`, `lot_frontage land_slope`, `lot_frontage bldg_type`, `lot_frontage overall_cond`, `lot_frontage year_built`, `lot_frontage foundation`, `lot_frontage bsmt_cond`, `lot_frontage bsmtfin_sf_2`, `lot_area^2`, `lot_area lot_shape`, `lot_area utilities`, `lot_area condition_1`, `lot_area bldg_type`, `lot_area overall_cond`, `lot_area year_remod/add`, `lot_area foundation`, `lot_area bsmt_cond`, `lot_area bsmtfin_sf_1`, `lot_area bsmtfin_type_2`, `lot_area bsmtfin_sf_2`, `lot_area bsmt_unf_sf`, `street bsmtfin_sf_2`, `street bsmt_unf_sf`, `alley^2`, `alley lot_shape`, `alley land_slope`, `alley bldg_type`,  `alley overall_cond`, `alley year_remod/add`, `alley foundation`, `alley bsmt_cond`, `alley bsmtfin_type_2`, `alley bsmtfin_sf_2`, `lot_shape^2`, `lot_shape condition_1`, `lot_shape bldg_type`, `lot_shape overall_cond`, `lot_shape year_built`, `lot_shape year_remod/add`, `lot_shape mas_vnr_area`, `lot_shape exter_qual`, `lot_shape bsmtfin_sf_1`, `lot_shape bsmtfin_sf_2`, `lot_shape bsmt_unf_sf`, `utilities^2`,  `utilities condition_1`, `utilities bldg_type`, `utilities year_remod/add`, `utilities foundation`, `utilities bsmtfin_sf_2`, `land_slope overall_cond`, `land_slope year_built`, `land_slope year_remod/add`, `land_slope mas_vnr_area`, `land_slope exter_qual`, `land_slope foundation`, `land_slope bsmt_cond`, `land_slope bsmtfin_type_2`, `condition_1^2`, `condition_1 bldg_type`, `condition_1 overall_cond`, `condition_1 mas_vnr_area`, `condition_1 foundation`, `condition_1 bsmtfin_sf_2`, `condition_1 bsmt_unf_sf`,      `bldg_type^2`, `bldg_type year_built`, `bldg_type mas_vnr_area`, `bldg_type exter_qual`, `bldg_type foundation`, `bldg_type bsmtfin_sf_1`, `overall_cond year_remod/add`, `overall_cond mas_vnr_area`, `overall_cond foundation`, `overall_cond bsmtfin_sf_1`, `overall_cond bsmtfin_sf_2`, `year_built year_remod/add`, `year_built foundation`, `year_built bsmtfin_sf_2`, `year_built bsmt_unf_sf`, `year_remod/add^2`, `year_remod/add bsmt_cond`, `year_remod/add bsmtfin_sf_1`, `year_remod/add bsmtfin_sf_2`, `mas_vnr_area^2`, `mas_vnr_area bsmt_cond`,`mas_vnr_area bsmtfin_sf_1`, `mas_vnr_area bsmtfin_sf_2`, `exter_qual^2`, `exter_qual bsmtfin_sf_2`, `foundation^2`, `foundation bsmt_cond`, `foundation bsmtfin_sf_1`, `foundation bsmtfin_sf_2`, `bsmt_cond bsmtfin_sf_1`, `bsmt_cond bsmtfin_sf_2`, `bsmt_cond bsmt_unf_sf`, `bsmt_exposure bsmtfin_sf_2`, `bsmt_exposure bsmt_unf_sf`</details>
 
 ### Features that add value to a home
@@ -200,7 +200,7 @@ Attempting to use other concepts on this data was not success for me. None of th
 
 ## Generalization and Next Steps
 
-The approach here could be generalizable but the specific model is not ready. Additionally I believe more time spent with regularlization and randomforest feature selection and hyperparameter optimization would be effective.
+The approach here could be generalizable but the specific model is not ready. Additionally I believe more time spent with regularlization and Recursive Feature Selection feature selection and hyperparameter optimization would be effective.
 
 
 ## Media Links
